@@ -145,6 +145,119 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-yaliy_trouble" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/27/yaliy_trouble/">yaliy_trouble</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/27/yaliy_trouble/" class="archive-article-date">
+  	<time datetime="2017-12-27T01:15:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="空格和编码"><a href="#空格和编码" class="headerlink" title="空格和编码"></a>空格和编码</h2><ol>
+<li>无论是在配置根目录下的<strong>_config.yml</strong>还是后期<strong>theme</strong>设置中的<strong>_config.yml</strong>，<br>冒号后面的空格号都不能忽略。</li>
+<li>尽管你已经配置了根目录下的<strong>_config.yml</strong>中的<strong>language</strong>的设置为中文。例如：<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">subtitle：因为悲观</span> <span class="string">所以长乐</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -s</span><br></pre></td></tr></table></figure>
+<p>之后，subtitle仍然<strong>乱码</strong>。</p>
+<h4 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h4><p>只需要将文本保存的编码改为<strong>utf-8</strong>，包括.yml(配置文件),md（博客文件）<br><img src="assets/markdown-img-paste-20171227095015817.png" alt="utf-8"></p>
+<h2 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h2><p>我用的是<strong>Atom</strong>，因为它有丰富的插件。当然，多数量的插件会导致软件本身冗余；本末倒置。</p>
+<h2 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h2><p><img src="assets/markdown-img-paste-20171227102116953.png" alt="extensions"></p>
+<h4 id="简要介绍"><a href="#简要介绍" class="headerlink" title="简要介绍"></a>简要介绍</h4><table>
+<thead>
+<tr>
+<th>拓展</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>markdown-preview-plus</td>
+<td>增强预览</td>
+</tr>
+<tr>
+<td>markdown-image-paste</td>
+<td>图片粘贴</td>
+</tr>
+<tr>
+<td>markdown-table-editor</td>
+<td>表格编辑</td>
+</tr>
+<tr>
+<td>markdown-scroll-sync</td>
+<td>同步滚动</td>
+</tr>
+<tr>
+<td>markdown-writer</td>
+<td>md编辑</td>
+</tr>
+</tbody>
+</table>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/27/yaliy_trouble/">more >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-azure" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -380,6 +493,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">pythoning</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
             
             <div class="clearfix"></div>
