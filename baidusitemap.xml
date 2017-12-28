@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+    
+  <url>
+    <loc>http://yoursite.com/2017/12/28/github-hexo-%E7%8B%AC%E7%AB%8B%E5%9F%9F%E5%90%8D/</loc>
+    <lastmod>2017-12-28T16:02:00.653Z</lastmod>
+    <data>
+        <display>
+        <title>github_hexo_独立域名</title>
+        <pubTime>2017-12-28T13:24:51.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/12/27/yaliy-trouble/</loc>
+    <lastmod>2017-12-28T16:01:55.598Z</lastmod>
+    <data>
+        <display>
+        <title>yilia_trouble</title>
+        <pubTime>2017-12-27T03:33:06.000Z</pubTime>
+        
+        <tag>hexo_trouble</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/12/28/%E6%B2%B9%E8%97%8F%E6%8F%8F%E8%BF%B0%E4%BD%9C%E4%B8%9A%E6%80%9D%E8%B7%AF/</loc>
+    <lastmod>2017-12-28T15:54:06.480Z</lastmod>
+    <data>
+        <display>
+        <title>油藏描述作业思路</title>
+        <pubTime>2017-12-28T13:59:55.000Z</pubTime>
+        
+        <tag>作业思路</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/12/26/python/</loc>
+    <lastmod>2017-12-26T15:19:54.948Z</lastmod>
+    <data>
+        <display>
+        <title>python的切片是什么</title>
+        <pubTime>2017-12-25T16:00:00.000Z</pubTime>
+        
+        <tag>pythoning</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/12/26/azure/</loc>
+    <lastmod>2017-12-26T14:08:28.696Z</lastmod>
+    <data>
+        <display>
+        <title>Azure</title>
+        <pubTime>2017-12-26T05:59:59.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Thankful" url="http://yoursite.com/categories/Thankful/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+</urlset>
