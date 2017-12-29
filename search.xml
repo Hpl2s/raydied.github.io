@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    
+    <entry>
+      <title><![CDATA[油藏描述作业思路]]></title>
+      <url>/2017/12/28/%E6%B2%B9%E8%97%8F%E6%8F%8F%E8%BF%B0%E4%BD%9C%E4%B8%9A%E6%80%9D%E8%B7%AF/</url>
+      <content type="html"><![CDATA[提要由于我是采用回忆的方法来总结经验，诸多考虑不到的地方，请多包含。您可以直接或通过邮件的方式咨询。 注意事项 petrel 软件在用于计算 砂泥岩厚度，及其比值（这些值多后期沉积微相的划分）时，可事半功倍。但petrel 2014的软件安装费时费力（并不推荐）。 老师极力推荐手绘/coreldraw绘图。这也是我此后得知的，因而我本人不再更改报告的任何细节；谨以此告诫大家。 在处理数据时，特别是针对22个数据单，有些繁杂；我极力推崇大家采用恰当的Excel函数打辅助，并从此迷上自动化。如INDIRECT函数等。如果能利用课外时间学习少量的VBA知识，也是极好的。 精力充沛的同学，可以在完成所有任务项之余，再用手清绘一遍，定会直捣黄龙。所以，不要再问到底什么方法好的问题。 思路 步骤 说明 工具方法 备注 1.油藏井位十字剖面线 油藏剖面线、闭合高 用 Coreldraw 在纵横向将油藏所有井位连接、从纵横向计算同一井位的高差（高差为0，即为闭合 [ 不必验证所有 ]） 前提 2. 油层细分对比 4-1小层的识别、划分（砂泥岩层）、砂岩厚度计算、制表汇总 依循1中的剖面线将井位排列并识别4-1层（依据三高泥岩段）、砂泥岩划分（半幅法）、petrel划分自动厚度计算/Coreldraw比例尺手动读厚、Excle制表统计 基础 3.等值线图 砂厚、孔隙度、渗透率、含油饱和度的等值线图绘制 根据由2中的砂岩厚度、及所给公式将孔隙度、渗透率、含油饱和度分别计算，归置四张表内，用surfer/python绘制等值线图即可 高潮 4.沉积微相图 依据所给出的基本该油藏基本沉积微相表，找相同 在考虑地质规律，结合砂泥厚度比下，结合砂岩等厚图，用Coreldraw的图层管理快捷地完成沉积微相图的绘制工作 过渡 5.油藏剖面图 总结考虑四个等值线图及沉积微相图，确定油水界面 选取1中的某一条剖面线，标定出油水界面海拔高即可。推荐用Coreldraw绘制该图（用petrel是被要扣分的，别问我为什么知道） 尾声]]></content>
+      
+        
+        <tags>
+            
+            <tag> 作业思路 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[github_hexo_独立域名]]></title>
+      <url>/2017/12/28/github-hexo-%E7%8B%AC%E7%AB%8B%E5%9F%9F%E5%90%8D/</url>
+      <content type="html"><![CDATA[三步走·申请独立顶级域名免费申请的网站。 注意，可能要翻墙。最多可以申请12个月的免费。网站人性化的设计及引导，你完全可以自己独立申请并完成注册。 配置域名如果你刨根问底——域名和DNS的关系，直接google要更好。 ·DNSpod解析提供DNS解析服务。 1.配置解析 2.CNAME新建CNAME，内容， 形如：raydied.tk，即你自己的域名。 ·上传]]></content>
+      
+        
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[yilia_trouble]]></title>
+      <url>/2017/12/27/yaliy-trouble/</url>
+      <content type="html"><![CDATA[hexo_yilia配置等待与clean 本地的网页渲染， 可以直接保存md、刷新浏览器，即可预览。2.同步到github上的md，则需要等待。注意，当等待一会儿之后，仍不能与本地预览相同时，则需要 空格和编码 无论是在配置根目录下的_config.yml还是后期theme设置中的_config.yml，冒号后面的空格号都不能忽略。 尽管你已经配置了根目录下的_config.yml中的language的设置为中文。例如： 之后，subtitle仍然乱码。 解决办法：只需要将文本保存的编码改为utf-8，包括.yml(配置文件),md（博客文件） 图片路径 头像、打赏、md中所提添加的图片需要特别注意。凡是采用主题之后的，须一致的放入/img/xxx.png(jpg等)。 markdown编辑语法markdownd语法 编辑器我用的是Atom，因为它有丰富的插件。当然，多数量的插件会导致软件本身冗余；本末倒置。 拓展 简要介绍 拓展 作用 markdown-preview-plus 增强预览 markdown-image-paste 图片粘贴 markdown-table-editor 表格编辑 markdown-scroll-sync 同步滚动 markdown-writer md编辑]]></content>
+      
+        
+        <tags>
+            
+            <tag> hexo_trouble </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Azure]]></title>
+      <url>/2017/12/26/azure/</url>
+      <content type="html"><![CDATA[Can you see it ? More info: …]]></content>
+      
+        <categories>
+            
+            <category> Thankful </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[python的切片是什么]]></title>
+      <url>/2017/12/26/python/</url>
+      <content type="html"><![CDATA[切片用来表达选择的语法。]]></content>
+      
+        
+        <tags>
+            
+            <tag> pythoning </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title></title>
+      <url>/baidu_verify_KlbOVW5KjZ.html</url>
+      <content type="html"><![CDATA[KlbOVW5KjZ
+]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>/google4c9cdda3981243fc.html</url>
+      <content type="html"><![CDATA[google-site-verification: google4c9cdda3981243fc.html
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[about]]></title>
+      <url>/about/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+  
+</search>
