@@ -35,7 +35,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(1000deg,#BE81F7,#E2A9F3);
+      background: fasle;
     }
   </style>
   
@@ -57,18 +57,50 @@ var _hmt = _hmt || [];
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
-      
+      <div class="baidu_js_push">
+	<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!--复制代码-->
+
+</div>
+
+
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			<img src="/img/id.jpg" class="js-avatar">
-		</a>
+
+<form id="search-form" class="search">  <!-- 搜索框相关 -->
+    <input type="text" id="st-search-input" name="q" results="0" class="st-default-search-input" maxlength="30" placeholder="Search..." autocomplete="off" autocorrect="off">
+</form>
+
+<header id="header" class="inner">
+	<a href="/" class="profilepic">
+
+		<!--改动-->
+		<img src="/img/id.jpg" class="js-avatar">
+		
+	</a>
+
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Ray Died</a></h1>
 		</hgroup>
+
 		
 
+		<div id="local-search-result"></div> <!-- 搜索结果区 -->
+    <p class='no-result'> <!--No results found--> </p> <!-- 无匹配时显示，注意请在 CSS 中设置默认隐藏，结束 -->
+<!-- 以下保持不变，省略 -->
 		<nav class="header-menu">
 			<ul>
 			
@@ -97,6 +129,8 @@ var _hmt = _hmt || [];
 					<a class="github" target="_blank" href="https://github.com/raydied" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="http://weibo.com/raydied" title="weibo"><i class="icon-weibo"></i></a>
+		        
+					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 		        
 					<a class="mail" target="_blank" href="mailto:raydied4@gmai.com" title="mail"><i class="icon-mail"></i></a>
 		        
@@ -142,6 +176,8 @@ var _hmt = _hmt || [];
 						<a class="github" target="_blank" href="https://github.com/raydied" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="http://weibo.com/raydied" title="weibo"><i class="icon-weibo"></i></a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 			        
 						<a class="mail" target="_blank" href="mailto:raydied4@gmai.com" title="mail"><i class="icon-mail"></i></a>
 			        
@@ -434,10 +470,10 @@ var _hmt = _hmt || [];
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
-		toc_hide_index: true,
+		toc_hide_index: false,
 		root: "/",
 		innerArchive: false,
-		showTags: true
+		showTags: false
 	}
 </script>
 
@@ -478,10 +514,10 @@ MathJax.Hub.Queue(function() {
         isTag: false,
         isCategory: false,
         open_in_new: false,
-        toc_hide_index: true,
+        toc_hide_index: false,
         root: "/",
         innerArchive: false,
-        showTags: true
+        showTags: false
     }
 </script>
 
