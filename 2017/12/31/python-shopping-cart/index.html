@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>index | raydied|补坑路</title>
+  <title>python_shopping_cart | raydied|补坑路</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="dying...">
-<meta property="og:type" content="website">
-<meta property="og:title" content="index">
-<meta property="og:url" content="http://yoursite.com/search/index.html">
+  <meta name="description" content="要求 要求顾客根据商品列表选择商品">
+<meta name="keywords" content="pythoning">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python_shopping_cart">
+<meta property="og:url" content="http://yoursite.com/2017/12/31/python-shopping-cart/index.html">
 <meta property="og:site_name" content="raydied|补坑路">
-<meta property="og:description" content="dying...">
+<meta property="og:description" content="要求 要求顾客根据商品列表选择商品">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-31T08:48:15.998Z">
+<meta property="og:updated_time" content="2017-12-31T11:54:09.064Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="index">
-<meta name="twitter:description" content="dying...">
+<meta name="twitter:title" content="python_shopping_cart">
+<meta name="twitter:description" content="要求 要求顾客根据商品列表选择商品">
   
     <link rel="alternative" href="/atom.xml" title="raydied|补坑路" type="application/atom+xml">
   
@@ -205,33 +206,43 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-python-shopping-cart" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      index
+      python_shopping_cart
     </h1>
   
 
 
 
   <a href="javascript:;" class="archive-article-date">
-      <i class="icon-smile icon"></i> 阅读数:<span id="/search/index.html" class="pageViews">0</span>次
+      <i class="icon-smile icon"></i> 阅读数:<span id="/2017/12/31/python-shopping-cart/" class="pageViews">0</span>次
   </a>
 
         
-        <a href="/search/index.html" class="archive-article-date">
-  	<time datetime="2017-12-31T08:48:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-31</time>
+        <a href="/2017/12/31/python-shopping-cart/" class="archive-article-date">
+  	<time datetime="2017-12-31T11:44:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-31</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <hr>
+<h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h2><ol>
+<li>要求顾客根据商品列表选择商品<a id="more"></a></li>
+<li>顾客可以在任何输入情况下离开程序并打印出已购商品</li>
+<li>当顾客的余额不足时，提醒并打印出已购商品<h2 id="tips"><a href="#tips" class="headerlink" title="tips"></a>tips</h2></li>
+<li>enumerate函数在打印商品列表时的作用</li>
+<li>着重显示，改变显示字体的背景、颜色等性质<h2 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h2></li>
+<li>代码不够优化，不能减少代码的重复。<strong>调用函数的方法</strong><h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#失败的</span></span><br><span class="line"><span class="string">'''product_list = [</span></span><br><span class="line"><span class="string">    ("iphone",4800),</span></span><br><span class="line"><span class="string">    ("bycicle",800),</span></span><br><span class="line"><span class="string">    ("iwatch",2300),</span></span><br><span class="line"><span class="string">    ("Mac pro",14800),</span></span><br><span class="line"><span class="string">    ("coffee",31),</span></span><br><span class="line"><span class="string">    ("surface pro",5800),</span></span><br><span class="line"><span class="string">]</span></span><br><span class="line"><span class="string">user_salary = input("please input your salary:")</span></span><br><span class="line"><span class="string">for product,price in enumerate(product_list):</span></span><br><span class="line"><span class="string">    print(product,price)</span></span><br><span class="line"><span class="string">shopping_list = []</span></span><br><span class="line"><span class="string">if user_salary.isdigit():</span></span><br><span class="line"><span class="string">    list_num = input("please choose the goods number/[q]:")</span></span><br><span class="line"><span class="string">    if list_num == "q":</span></span><br><span class="line"><span class="string">        print("-------your shopping list-------")</span></span><br><span class="line"><span class="string">        for item in shopping_list:</span></span><br><span class="line"><span class="string">            print(item)</span></span><br><span class="line"><span class="string">    else:</span></span><br><span class="line"><span class="string">        list_num = int(list_num)</span></span><br><span class="line"><span class="string">        while True:</span></span><br><span class="line"><span class="string">            if list_num &lt; len(product_list) and list_num &gt;= 0:</span></span><br><span class="line"><span class="string">                if product_list[list_num][1] &lt;= salary:</span></span><br><span class="line"><span class="string">                    salary -= product_list[list_num][1]</span></span><br><span class="line"><span class="string">                    shopping_list.append(product_list[list_num])</span></span><br><span class="line"><span class="string">                else:</span></span><br><span class="line"><span class="string">                    print("还买个鬼，钱不够，只剩[%s]", salary)</span></span><br><span class="line"><span class="string">                    print("-------your shopping list-------")</span></span><br><span class="line"><span class="string">                    for i in shopping_list:</span></span><br><span class="line"><span class="string">                        print(i)</span></span><br><span class="line"><span class="string">else:</span></span><br><span class="line"><span class="string">    print("please check the goods number!")</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line">product_list = [</span><br><span class="line">    (<span class="string">"iphone"</span>,<span class="number">4800</span>),</span><br><span class="line">    (<span class="string">"bycicle"</span>,<span class="number">800</span>),</span><br><span class="line">    (<span class="string">"iwatch"</span>,<span class="number">2300</span>),</span><br><span class="line">    (<span class="string">"Mac pro"</span>,<span class="number">14800</span>),</span><br><span class="line">    (<span class="string">"coffee"</span>,<span class="number">31</span>),</span><br><span class="line">    (<span class="string">"surface pro"</span>,<span class="number">5800</span>),</span><br><span class="line">]<span class="comment">#商品列表</span></span><br><span class="line"></span><br><span class="line">shopping_cart = []<span class="comment">#购物车</span></span><br><span class="line"></span><br><span class="line">user_salary = input(<span class="string">"input your salary:"</span>)<span class="comment">#钱包</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> user_salary.isdigit():</span><br><span class="line">    salary = int(user_salary)</span><br><span class="line">    <span class="keyword">for</span> index, item <span class="keyword">in</span> enumerate(product_list):</span><br><span class="line">        print(index, item)</span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        product_num = input(<span class="string">"input the goood's number:"</span>)</span><br><span class="line">        <span class="keyword">if</span> product_num.isdigit():</span><br><span class="line">            goods_num = int(product_num)</span><br><span class="line">            <span class="keyword">if</span> goods_num &gt;= <span class="number">0</span> <span class="keyword">and</span> goods_num &lt; len(product_list):</span><br><span class="line">                <span class="keyword">if</span> salary &gt;= int(product_list[goods_num][<span class="number">1</span>]):</span><br><span class="line">                    salary = salary - product_list[goods_num][<span class="number">1</span>]</span><br><span class="line">                    shopping_cart.append(product_list[goods_num])</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    print(<span class="string">"\033[31;1msorry,you only have [%s].\033[0m"</span>%salary)<span class="comment">#着重显示</span></span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> goods_num == <span class="string">'q'</span>:</span><br><span class="line">                    print(<span class="string">"you have already quit"</span>)</span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    print(<span class="string">"check your input"</span>)</span><br><span class="line">                    <span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span> product_num == <span class="string">'q'</span>:</span><br><span class="line">                print(<span class="string">"you have already quit"</span>)</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                print(<span class="string">"check your input"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">if</span> user_salary == <span class="string">'q'</span>:</span><br><span class="line">        exit(<span class="string">"you have already quit"</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"check your input"</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"-----shopping cart list-----"</span>)</span><br><span class="line"><span class="keyword">if</span> len(shopping_cart) == <span class="number">0</span>:</span><br><span class="line">    print(<span class="string">"shopping cart is empty"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">for</span> index, item <span class="keyword">in</span> enumerate(shopping_cart):</span><br><span class="line">        print(index,item)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+
       
 
       
@@ -270,6 +281,17 @@ var _hmt = _hmt || [];
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">pythoning</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -320,7 +342,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/search/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/31/python-shopping-cart/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -332,6 +354,16 @@ var _hmt = _hmt || [];
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2017/12/28/油藏描述作业思路/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">油藏描述作业思路</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -414,7 +446,7 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
@@ -461,7 +493,7 @@ MathJax.Hub.Queue(function() {
     var yiliaConfig = {
         mathjax: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
