@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
+<search> 
   
     
     <entry>
       <title><![CDATA[python_shopping_cart]]></title>
       <url>/2017/12/31/python-shopping-cart/</url>
-      <content type="html"><![CDATA[要求 要求顾客根据商品列表选择商品 顾客可以在任何输入情况下离开程序并打印出已购商品 当顾客的余额不足时，提醒并打印出已购商品tips enumerate函数在打印商品列表时的作用 着重显示，改变显示字体的背景、颜色等性质不足 代码不够优化，不能减少代码的重复。调用函数的方法代码如下]]></content>
+      <content type="html"><![CDATA[<hr>
+<h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h2><ol>
+<li>要求顾客根据商品列表选择商品<a id="more"></a></li>
+<li>顾客可以在任何输入情况下离开程序并打印出已购商品</li>
+<li>当顾客的余额不足时，提醒并打印出已购商品<h2 id="tips"><a href="#tips" class="headerlink" title="tips"></a>tips</h2></li>
+<li>enumerate函数在打印商品列表时的作用</li>
+<li>着重显示，改变显示字体的背景、颜色等性质<h2 id="不足"><a href="#不足" class="headerlink" title="不足"></a>不足</h2></li>
+<li>代码不够优化，不能减少代码的重复。<strong>调用函数的方法</strong><h2 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#失败的</span></span><br><span class="line"><span class="string">'''product_list = [</span></span><br><span class="line"><span class="string">    ("iphone",4800),</span></span><br><span class="line"><span class="string">    ("bycicle",800),</span></span><br><span class="line"><span class="string">    ("iwatch",2300),</span></span><br><span class="line"><span class="string">    ("Mac pro",14800),</span></span><br><span class="line"><span class="string">    ("coffee",31),</span></span><br><span class="line"><span class="string">    ("surface pro",5800),</span></span><br><span class="line"><span class="string">]</span></span><br><span class="line"><span class="string">user_salary = input("please input your salary:")</span></span><br><span class="line"><span class="string">for product,price in enumerate(product_list):</span></span><br><span class="line"><span class="string">    print(product,price)</span></span><br><span class="line"><span class="string">shopping_list = []</span></span><br><span class="line"><span class="string">if user_salary.isdigit():</span></span><br><span class="line"><span class="string">    list_num = input("please choose the goods number/[q]:")</span></span><br><span class="line"><span class="string">    if list_num == "q":</span></span><br><span class="line"><span class="string">        print("-------your shopping list-------")</span></span><br><span class="line"><span class="string">        for item in shopping_list:</span></span><br><span class="line"><span class="string">            print(item)</span></span><br><span class="line"><span class="string">    else:</span></span><br><span class="line"><span class="string">        list_num = int(list_num)</span></span><br><span class="line"><span class="string">        while True:</span></span><br><span class="line"><span class="string">            if list_num &lt; len(product_list) and list_num &gt;= 0:</span></span><br><span class="line"><span class="string">                if product_list[list_num][1] &lt;= salary:</span></span><br><span class="line"><span class="string">                    salary -= product_list[list_num][1]</span></span><br><span class="line"><span class="string">                    shopping_list.append(product_list[list_num])</span></span><br><span class="line"><span class="string">                else:</span></span><br><span class="line"><span class="string">                    print("还买个鬼，钱不够，只剩[%s]", salary)</span></span><br><span class="line"><span class="string">                    print("-------your shopping list-------")</span></span><br><span class="line"><span class="string">                    for i in shopping_list:</span></span><br><span class="line"><span class="string">                        print(i)</span></span><br><span class="line"><span class="string">else:</span></span><br><span class="line"><span class="string">    print("please check the goods number!")</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"></span><br><span class="line">product_list = [</span><br><span class="line">    (<span class="string">"iphone"</span>,<span class="number">4800</span>),</span><br><span class="line">    (<span class="string">"bycicle"</span>,<span class="number">800</span>),</span><br><span class="line">    (<span class="string">"iwatch"</span>,<span class="number">2300</span>),</span><br><span class="line">    (<span class="string">"Mac pro"</span>,<span class="number">14800</span>),</span><br><span class="line">    (<span class="string">"coffee"</span>,<span class="number">31</span>),</span><br><span class="line">    (<span class="string">"surface pro"</span>,<span class="number">5800</span>),</span><br><span class="line">]<span class="comment">#商品列表</span></span><br><span class="line"></span><br><span class="line">shopping_cart = []<span class="comment">#购物车</span></span><br><span class="line"></span><br><span class="line">user_salary = input(<span class="string">"input your salary:"</span>)<span class="comment">#钱包</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> user_salary.isdigit():</span><br><span class="line">    salary = int(user_salary)</span><br><span class="line">    <span class="keyword">for</span> index, item <span class="keyword">in</span> enumerate(product_list):</span><br><span class="line">        print(index, item)</span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">        product_num = input(<span class="string">"input the goood's number:"</span>)</span><br><span class="line">        <span class="keyword">if</span> product_num.isdigit():</span><br><span class="line">            goods_num = int(product_num)</span><br><span class="line">            <span class="keyword">if</span> goods_num &gt;= <span class="number">0</span> <span class="keyword">and</span> goods_num &lt; len(product_list):</span><br><span class="line">                <span class="keyword">if</span> salary &gt;= int(product_list[goods_num][<span class="number">1</span>]):</span><br><span class="line">                    salary = salary - product_list[goods_num][<span class="number">1</span>]</span><br><span class="line">                    shopping_cart.append(product_list[goods_num])</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    print(<span class="string">"\033[31;1msorry,you only have [%s].\033[0m"</span>%salary)<span class="comment">#着重显示</span></span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="keyword">if</span> goods_num == <span class="string">'q'</span>:</span><br><span class="line">                    print(<span class="string">"you have already quit"</span>)</span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    print(<span class="string">"check your input"</span>)</span><br><span class="line">                    <span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span> product_num == <span class="string">'q'</span>:</span><br><span class="line">                print(<span class="string">"you have already quit"</span>)</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                print(<span class="string">"check your input"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">if</span> user_salary == <span class="string">'q'</span>:</span><br><span class="line">        exit(<span class="string">"you have already quit"</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">"check your input"</span>)</span><br><span class="line"></span><br><span class="line">print(<span class="string">"-----shopping cart list-----"</span>)</span><br><span class="line"><span class="keyword">if</span> len(shopping_cart) == <span class="number">0</span>:</span><br><span class="line">    print(<span class="string">"shopping cart is empty"</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="keyword">for</span> index, item <span class="keyword">in</span> enumerate(shopping_cart):</span><br><span class="line">        print(index,item)</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+]]></content>
       
         
         <tags>
@@ -19,7 +29,57 @@
     <entry>
       <title><![CDATA[油藏描述作业思路]]></title>
       <url>/2017/12/28/%E6%B2%B9%E8%97%8F%E6%8F%8F%E8%BF%B0%E4%BD%9C%E4%B8%9A%E6%80%9D%E8%B7%AF/</url>
-      <content type="html"><![CDATA[提要由于我是采用回忆的方法来总结经验，诸多考虑不到的地方，请多包含。您可以直接或通过邮件的方式咨询。 注意事项 petrel 软件在用于计算 砂泥岩厚度，及其比值（这些值多后期沉积微相的划分）时，可事半功倍。但petrel 2014的软件安装费时费力（并不推荐）。 老师极力推荐手绘/coreldraw绘图。这也是我此后得知的，因而我本人不再更改报告的任何细节；谨以此告诫大家。 在处理数据时，特别是针对22个数据单，有些繁杂；我极力推崇大家采用恰当的Excel函数打辅助，并从此迷上自动化。如INDIRECT函数等。如果能利用课外时间学习少量的VBA知识，也是极好的。 精力充沛的同学，可以在完成所有任务项之余，再用手清绘一遍，定会直捣黄龙。所以，不要再问到底什么方法好的问题。 思路 步骤 说明 工具方法 备注 1.油藏井位十字剖面线 油藏剖面线、闭合高 用 Coreldraw 在纵横向将油藏所有井位连接、从纵横向计算同一井位的高差（高差为0，即为闭合 [ 不必验证所有 ]） 前提 2. 油层细分对比 4-1小层的识别、划分（砂泥岩层）、砂岩厚度计算、制表汇总 依循1中的剖面线将井位排列并识别4-1层（依据三高泥岩段）、砂泥岩划分（半幅法）、petrel划分自动厚度计算/Coreldraw比例尺手动读厚、Excle制表统计 基础 3.等值线图 砂厚、孔隙度、渗透率、含油饱和度的等值线图绘制 根据由2中的砂岩厚度、及所给公式将孔隙度、渗透率、含油饱和度分别计算，归置四张表内，用surfer/python绘制等值线图即可 高潮 4.沉积微相图 依据所给出的基本该油藏基本沉积微相表，找相同 在考虑地质规律，结合砂泥厚度比下，结合砂岩等厚图，用Coreldraw的图层管理快捷地完成沉积微相图的绘制工作 过渡 5.油藏剖面图 总结考虑四个等值线图及沉积微相图，确定油水界面 选取1中的某一条剖面线，标定出油水界面海拔高即可。推荐用Coreldraw绘制该图（用petrel是被要扣分的，别问我为什么知道） 尾声]]></content>
+      <content type="html"><![CDATA[<hr>
+<h1 id="提要"><a href="#提要" class="headerlink" title="提要"></a>提要</h1><h4 id="由于我是采用回忆的方法来总结经验，诸多考虑不到的地方，请多包含。"><a href="#由于我是采用回忆的方法来总结经验，诸多考虑不到的地方，请多包含。" class="headerlink" title="由于我是采用回忆的方法来总结经验，诸多考虑不到的地方，请多包含。"></a>由于我是采用回忆的方法来总结经验，诸多考虑不到的地方，请多包含。</h4><p>您可以直接或通过邮件的方式咨询。<br><a id="more"></a></p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li><strong>petrel</strong> 软件在用于计算 砂泥岩厚度，及其比值（这些值多后期沉积微相的划分）时，可事半功倍。但<strong>petrel 2014</strong>的软件安装费时费力（并不推荐）。</li>
+<li>老师极力推荐<strong>手绘/coreldraw绘图</strong>。这也是我此后得知的，因而我本人不再更改报告的任何细节；谨以此告诫大家。</li>
+<li>在处理数据时，特别是针对22个数据单，有些繁杂；我极力推崇大家采用恰当的<strong>Excel函数</strong>打辅助，并从此迷上自动化。如<a href="https://support.office.com/zh-cn/article/INDIRECT-%E5%87%BD%E6%95%B0-474b3a3a-8a26-4f44-b491-92b6306fa261" target="_blank" rel="noopener">INDIRECT</a>函数等。如果能利用课外时间学习少量的<strong>VBA知识</strong>，也是极好的。</li>
+<li>精力充沛的同学，可以在完成所有任务项之余，再用手清绘一遍，定会直捣黄龙。所以，不要再问到底<strong>什么方法好</strong>的问题。</li>
+</ol>
+<h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>说明</th>
+<th>工具方法</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.油藏井位十字剖面线</td>
+<td>油藏剖面线、闭合高</td>
+<td>用 Coreldraw 在纵横向将油藏所有井位连接、从纵横向计算同一井位的高差（高差为0，即为闭合 [ 不必验证所有 ]）</td>
+<td>前提</td>
+</tr>
+<tr>
+<td>2. 油层细分对比</td>
+<td>4-1小层的识别、划分（砂泥岩层）、砂岩厚度计算、制表汇总</td>
+<td>依循1中的剖面线将井位排列并识别4-1层（依据三高泥岩段）、砂泥岩划分（半幅法）、petrel划分<em>自动厚度计算/Coreldraw</em>比例尺手动读厚、Excle制表统计</td>
+<td>基础</td>
+</tr>
+<tr>
+<td>3.等值线图</td>
+<td>砂厚、孔隙度、渗透率、含油饱和度的等值线图绘制</td>
+<td>根据由2中的砂岩厚度、及所给公式将孔隙度、渗透率、含油饱和度分别计算，归置四张表内，用<a href="https://www.jianshu.com/p/249193f54df8" target="_blank" rel="noopener">surfer</a>/<a href="https://www.jianshu.com/p/d59774c9bc76" target="_blank" rel="noopener">python</a>绘制等值线图即可</td>
+<td>高潮</td>
+</tr>
+<tr>
+<td>4.沉积微相图</td>
+<td>依据所给出的基本该油藏基本沉积微相表，找相同</td>
+<td>在考虑地质规律，结合砂泥厚度比下，结合砂岩等厚图，用Coreldraw的图层管理快捷地完成沉积微相图的绘制工作</td>
+<td>过渡</td>
+</tr>
+<tr>
+<td>5.油藏剖面图</td>
+<td>总结考虑四个等值线图及沉积微相图，确定油水界面</td>
+<td>选取1中的某一条剖面线，标定出油水界面海拔高即可。推荐用Coreldraw绘制该图（用<strong>petrel</strong>是被要<strong>扣分</strong>的，别问我为什么知道）</td>
+<td>尾声</td>
+</tr>
+</tbody>
+</table>
+]]></content>
       
         
         <tags>
@@ -33,7 +93,22 @@
     <entry>
       <title><![CDATA[github_hexo_独立域名]]></title>
       <url>/2017/12/28/github-hexo-%E7%8B%AC%E7%AB%8B%E5%9F%9F%E5%90%8D/</url>
-      <content type="html"><![CDATA[三步走·申请独立顶级域名免费申请的网站。 注意，可能要翻墙。最多可以申请12个月的免费。网站人性化的设计及引导，你完全可以自己独立申请并完成注册。 配置域名如果你刨根问底——域名和DNS的关系，直接google要更好。 ·DNSpod解析提供DNS解析服务。 1.配置解析 2.CNAME新建CNAME，内容， 形如：raydied.tk，即你自己的域名。 ·上传]]></content>
+      <content type="html"><![CDATA[<hr>
+<h1 id="三步走"><a href="#三步走" class="headerlink" title="三步走"></a>三步走</h1><h2 id="·申请独立顶级域名"><a href="#·申请独立顶级域名" class="headerlink" title="·申请独立顶级域名"></a>·申请独立顶级域名</h2><p>免费申请的<a href="https://my.freenom.com/clientarea.php" target="_blank" rel="noopener">网站</a>。 <strong>注意</strong>，可能要翻墙。最多可以申请12个月的<strong>免费</strong>。<a id="more"></a>网站人性化的设计及引导，你完全可以自己独立申请并完成注册。</p>
+<h3 id="配置域名"><a href="#配置域名" class="headerlink" title="配置域名"></a>配置域名</h3><p>如果你刨根问底——域名和DNS的关系，直接<a href="https://www.google.com/search?q=%E5%9F%9F%E5%90%8D%E5%92%8Cdns%E8%A7%A3%E6%9E%90%E7%9A%84%E5%85%B3%E7%B3%BB&amp;oq=%E5%9F%9F%E5%90%8D%E5%92%8Cdns%E8%A7%A3%E6%9E%90%E7%9A%84%E5%85%B3%E7%B3%BB&amp;aqs=chrome..69i57.8944j0j4&amp;sourceid=chrome&amp;ie=UTF-8" target="_blank" rel="noopener">google</a>要更好。</p>
+<ol>
+<li><p><img src="/2017/12/28/github-hexo-独立域名/markdown-img-paste-20171228213916506.png" alt=""></p>
+</li>
+<li><p><img src="/2017/12/28/github-hexo-独立域名/markdown-img-paste-20171228213944996.png" alt=""></p>
+</li>
+<li><p><img src="/2017/12/28/github-hexo-独立域名/markdown-img-paste-20171228214021848.png" alt=""></p>
+<h2 id="·DNSpod解析"><a href="#·DNSpod解析" class="headerlink" title="·DNSpod解析"></a>·DNSpod解析</h2><p>提供<a href="https://www.dnspod.cn/" target="_blank" rel="noopener">DNS</a>解析服务。</p>
+<h3 id="1-配置解析"><a href="#1-配置解析" class="headerlink" title="1.配置解析"></a>1.配置解析</h3><p><img src="/2017/12/28/github-hexo-独立域名/markdown-img-paste-20171228214727527.png" alt=""></p>
+<h3 id="2-CNAME"><a href="#2-CNAME" class="headerlink" title="2.CNAME"></a>2.CNAME</h3><p>新建CNAME，<strong>内容，</strong> 形如：raydied.tk，即你自己的域名。</p>
+<h2 id="·上传"><a href="#·上传" class="headerlink" title="·上传"></a>·上传</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d -g</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+]]></content>
       
         
         <tags>
@@ -47,7 +122,56 @@
     <entry>
       <title><![CDATA[yilia_trouble]]></title>
       <url>/2017/12/27/yaliy-trouble/</url>
-      <content type="html"><![CDATA[hexo_yilia配置等待与clean 本地的网页渲染， 可以直接保存md、刷新浏览器，即可预览。2.同步到github上的md，则需要等待。注意，当等待一会儿之后，仍不能与本地预览相同时，则需要 空格和编码 无论是在配置根目录下的_config.yml还是后期theme设置中的_config.yml，冒号后面的空格号都不能忽略。 尽管你已经配置了根目录下的_config.yml中的language的设置为中文。例如： 之后，subtitle仍然乱码。 解决办法：只需要将文本保存的编码改为utf-8，包括.yml(配置文件),md（博客文件） 图片路径 头像、打赏、md中所提添加的图片需要特别注意。凡是采用主题之后的，须一致的放入/img/xxx.png(jpg等)。 markdown编辑语法markdownd语法 编辑器我用的是Atom，因为它有丰富的插件。当然，多数量的插件会导致软件本身冗余；本末倒置。 拓展 简要介绍 拓展 作用 markdown-preview-plus 增强预览 markdown-image-paste 图片粘贴 markdown-table-editor 表格编辑 markdown-scroll-sync 同步滚动 markdown-writer md编辑]]></content>
+      <content type="html"><![CDATA[<hr>
+<h1 id="hexo-yilia配置"><a href="#hexo-yilia配置" class="headerlink" title="hexo_yilia配置"></a>hexo_yilia配置</h1><h3 id="等待与clean"><a href="#等待与clean" class="headerlink" title="等待与clean"></a>等待与clean</h3><ol>
+<li>本地的网页渲染，<a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -s</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>可以直接保存md、刷新浏览器，即可预览。<br>2.同步到github上的md，则需要等待。<strong>注意</strong>，当等待一会儿之后，仍不能与本地预览相同时，则需要<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo -g</span><br><span class="line">hexo -s #(可跳过)[效果同“hexo -g”+“预览”]</span><br><span class="line">hexo -d</span><br></pre></td></tr></table></figure></p>
+<h3 id="空格和编码"><a href="#空格和编码" class="headerlink" title="空格和编码"></a>空格和编码</h3><ol>
+<li>无论是在配置根目录下的<strong>_config.yml</strong>还是后期<strong>theme</strong>设置中的<strong>_config.yml</strong>，<br>冒号后面的空格号都不能忽略。</li>
+<li>尽管你已经配置了根目录下的<strong>_config.yml</strong>中的<strong>language</strong>的设置为中文。例如：<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">subtitle:</span> <span class="string">因为悲观</span> <span class="string">所以长乐</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -s</span><br></pre></td></tr></table></figure>
+<p>之后，subtitle仍然<strong>乱码</strong>。</p>
+<h4 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h4><p>只需要将文本保存的编码改为<strong>utf-8</strong>，包括.yml(配置文件),md（博客文件）<br><img src="/2017/12/27/yaliy-trouble/utf8.png" alt="utf8"></p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><p> 头像、打赏、md中所提添加的图片<a href="https://www.jianshu.com/p/c2ba9533088a" target="_blank" rel="noopener">需要特别注意</a>。凡是采用主题之后的，须一致的放入<strong>/img/xxx.png</strong>(jpg等)。</p>
+<h1 id="markdown编辑"><a href="#markdown编辑" class="headerlink" title="markdown编辑"></a>markdown编辑</h1><h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>markdownd<a href="http://www.cnblogs.com/liugang-vip/p/6337580.html" target="_blank" rel="noopener">语法</a></p>
+<h3 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h3><p>我用的是<strong>Atom</strong>，因为它有丰富的<a href="http://www.cnblogs.com/fanzhidongyzby/p/6637084.html" target="_blank" rel="noopener">插件</a>。当然，多数量的插件会导致软件本身冗余；本末倒置。</p>
+<h3 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h3><p><img src="/2017/12/27/yaliy-trouble/extension.png" alt="ex"></p>
+<h4 id="简要介绍"><a href="#简要介绍" class="headerlink" title="简要介绍"></a>简要介绍</h4><table>
+<thead>
+<tr>
+<th>拓展</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>markdown-preview-plus</td>
+<td>增强预览</td>
+</tr>
+<tr>
+<td>markdown-image-paste</td>
+<td>图片粘贴</td>
+</tr>
+<tr>
+<td>markdown-table-editor</td>
+<td>表格编辑</td>
+</tr>
+<tr>
+<td>markdown-scroll-sync</td>
+<td>同步滚动</td>
+</tr>
+<tr>
+<td>markdown-writer</td>
+<td>md编辑</td>
+</tr>
+</tbody>
+</table>
+]]></content>
       
         
         <tags>
@@ -61,21 +185,27 @@
     <entry>
       <title><![CDATA[Azure]]></title>
       <url>/2017/12/26/azure/</url>
-      <content type="html"><![CDATA[Can you see it ? More info: …]]></content>
+      <content type="html"><![CDATA[<hr>
+<h2 id="Can-you-see-it"><a href="#Can-you-see-it" class="headerlink" title="Can you see it ?"></a>Can you see it ?</h2><a id="more"></a>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yingying</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://vocaroo.com/i/s0gOckxceWAG" target="_blank" rel="noopener">…</a></p>
+]]></content>
       
-        <categories>
-            
-            <category> Thankful </category>
-            
-        </categories>
         
+        <tags>
+            
+            <tag> Thankful </tag>
+            
+        </tags>
         
     </entry>
     
     <entry>
       <title><![CDATA[python的切片是什么]]></title>
       <url>/2017/12/26/python/</url>
-      <content type="html"><![CDATA[切片用来表达选择的语法。]]></content>
+      <content type="html"><![CDATA[<hr>
+<p><strong>切片</strong>用来表达<strong>选择</strong>的语法。<br><a id="more"></a><br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">fruit = [<span class="string">"apple"</span>,<span class="string">"banana"</span>,<span class="string">"cherry"</span>,<span class="string">"peach"</span>]</span><br><span class="line"><span class="comment">#选择性打印</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> fruits[<span class="number">0</span>:<span class="number">-1</span>:<span class="number">2</span>]:</span><br><span class="line">    print(i)</span><br><span class="line">print(fruit[a:b:c])<span class="comment">#其中a,b表达选择的起，止。c表达选择的步长。</span></span><br></pre></td></tr></table></figure></p>
+]]></content>
       
         
         <tags>
@@ -87,25 +217,5 @@
     </entry>
     
   
-  
-    
-    <entry>
-      <title></title>
-      <url>/baidu_verify_KlbOVW5KjZ.html</url>
-      <content type="html"><![CDATA[KlbOVW5KjZ]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
-      <url>/google4c9cdda3981243fc.html</url>
-      <content type="html"><![CDATA[google-site-verification: google4c9cdda3981243fc.html]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[about]]></title>
-      <url>/about/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
   
 </search>
