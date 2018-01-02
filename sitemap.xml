@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://raydied.tk/about/index.html</loc>
+    
+    <lastmod>2018-01-02T17:42:31.766Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://raydied.tk/2017/12/26/azure/</loc>
     
     <lastmod>2018-01-02T14:16:04.019Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://raydied.tk/404/index.html</loc>
     
     <lastmod>2018-01-02T14:01:07.022Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://raydied.tk/about/index.html</loc>
-    
-    <lastmod>2017-12-31T12:59:56.669Z</lastmod>
     
   </url>
   
