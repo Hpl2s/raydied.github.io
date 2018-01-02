@@ -180,7 +180,7 @@
                         
                             <li><a href="/archives/">所有文章</a></li>
                         
-                            <li><a href="/about/">我</a></li>
+                            <li><a href="/about/">关于</a></li>
                         
                         </ul>
                     </nav>
@@ -202,7 +202,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Thankful/">Thankful</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-trouble/">hexo_trouble</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pythoning/">pythoning</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/作业思路/">作业思路</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Thankful/">Thankful</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pythoning/">pythoning</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/作业思路/">作业思路</a></li></ul>
                     </div>
                 </section>
                 
@@ -245,7 +245,7 @@
                 
                     <li><a href="/archives/">所有文章</a></li>
                 
-                    <li><a href="/about/">我</a></li>
+                    <li><a href="/about/">关于</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
@@ -274,6 +274,15 @@
       <time datetime="2017-12-28T13:24:51.000Z" itemprop="datePublished">2017-12-28</time>
 </a>
 
+ 
+    <a href="/2017/12/28/github-hexo-独立域名/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+        
+            <span class="disqus-comment-count" data-disqus-identifier="2017/12/28/github-hexo-独立域名/"></span>
+        
+    </a>
 
     </div>
   
@@ -419,11 +428,18 @@
 
 
     
-        <section class="youyan" id="comments">
+        <section id="comments">
+    <style> aside.comment-bar { margin: auto 30px; }</style>
+    <div id="disqus_thread"></div>
     <script>
+        var disqus_config = function(){
+            this.page.url = 'http://raydied.tk/2017/12/28/github-hexo-独立域名/';
+            this.page.identifier = '2017/12/28/github-hexo-独立域名/';
+        };
         var loadComment = function(){
             var d = document, s = d.createElement('script');
-            s.src = 'http://v2.uyan.cc/code/uyan.js?uid=2153042';
+            s.src = '//raydied-bu-keng-lu.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
             (d.head || d.body).appendChild(s);
         }
     </script>
@@ -453,8 +469,24 @@
         }
     </script>
 
-    <div id="uyan_frame"></div>
 </section>
+
+
+    // Add comment count
+    <script id="dsq-count-scr" src="//raydied-bu-keng-lu.disqus.com/count.js" async></script>
+    <span class="disqus-comment-count" data-disqus-identifier="2017/12/28/github-hexo-独立域名/"></span>
+    <span class="disqus-comment-count" data-disqus-url="http://raydied.tk/2017/12/28/github-hexo-独立域名/"></span>
+    <script>
+        $(".disqus-comment-count").hide();
+        var $disqusCount = $(".disqus-comment-count");
+        $disqusCount.bind("DOMNodeInserted", function(e) {
+            $(".count-comment").text(
+                $(this).text().replace(/[^0-9]/ig,"")
+            )
+            DISQUSWIDGETS.getCount({reset: true});
+        })
+    </script>
+
     
 
 
