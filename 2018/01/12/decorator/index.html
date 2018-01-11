@@ -15,21 +15,18 @@
 
 
 
-<meta name="description" content="hexo_yilia配置等待与clean 本地的网页渲染，">
-<meta name="keywords" content="hexo">
+<meta name="description" content="装饰器1234嵌套函数():    装饰器():        新功能    return 装饰器">
+<meta name="keywords" content="pythoning">
 <meta property="og:type" content="article">
-<meta property="og:title" content="yilia_trouble">
-<meta property="og:url" content="http://raydied.tk/2017/12/27/yaliy-trouble/index.html">
+<meta property="og:title" content="decorator">
+<meta property="og:url" content="http://raydied.tk/2018/01/12/decorator/index.html">
 <meta property="og:site_name" content="raydied|补坑路">
-<meta property="og:description" content="hexo_yilia配置等待与clean 本地的网页渲染，">
+<meta property="og:description" content="装饰器1234嵌套函数():    装饰器():        新功能    return 装饰器">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://raydied.tk/2017/12/27/yaliy-trouble/utf8.png">
-<meta property="og:image" content="http://raydied.tk/2017/12/27/yaliy-trouble/extension.png">
-<meta property="og:updated_time" content="2018-01-02T17:49:52.261Z">
+<meta property="og:updated_time" content="2018-01-11T18:44:17.147Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yilia_trouble">
-<meta name="twitter:description" content="hexo_yilia配置等待与clean 本地的网页渲染，">
-<meta name="twitter:image" content="http://raydied.tk/2017/12/27/yaliy-trouble/utf8.png">
+<meta name="twitter:title" content="decorator">
+<meta name="twitter:description" content="装饰器1234嵌套函数():    装饰器():        新功能    return 装饰器">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -61,7 +58,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>yilia_trouble | raydied|补坑路</title>
+<title>decorator | raydied|补坑路</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -267,20 +264,20 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-yaliy-trouble" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-decorator" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/12/27/yaliy-trouble/" class="article-date">
-      <time datetime="2017-12-27T03:33:06.000Z" itemprop="datePublished">2017-12-27</time>
+      <a href="/2018/01/12/decorator/" class="article-date">
+      <time datetime="2018-01-11T18:35:37.000Z" itemprop="datePublished">2018-01-12</time>
 </a>
 
  
-    <a href="/2017/12/27/yaliy-trouble/#comments" title="查看评论">
+    <a href="/2018/01/12/decorator/#comments" title="查看评论">
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
         
-            <span class="disqus-comment-count" data-disqus-identifier="2017/12/27/yaliy-trouble/"></span>
+            <span class="disqus-comment-count" data-disqus-identifier="2018/01/12/decorator/"></span>
         
     </a>
 
@@ -295,7 +292,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      yilia_trouble
+      decorator
     </h1>
   
 
@@ -306,7 +303,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pythoning/">pythoning</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -316,55 +313,10 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <hr>
-<h1 id="hexo-yilia配置"><a href="#hexo-yilia配置" class="headerlink" title="hexo_yilia配置"></a>hexo_yilia配置</h1><h3 id="等待与clean"><a href="#等待与clean" class="headerlink" title="等待与clean"></a>等待与clean</h3><ol>
-<li>本地的网页渲染，<a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -s</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>可以直接保存md、刷新浏览器，即可预览。<br>2.同步到github上的md，则需要等待。<strong>注意</strong>，当等待一会儿之后，仍不能与本地预览相同时，则需要<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo -g</span><br><span class="line">hexo -s #(可跳过)[效果同“hexo -g”+“预览”]</span><br><span class="line">hexo -d</span><br></pre></td></tr></table></figure></p>
-<h3 id="空格和编码"><a href="#空格和编码" class="headerlink" title="空格和编码"></a>空格和编码</h3><ol>
-<li>无论是在配置根目录下的<strong>_config.yml</strong>还是后期<strong>theme</strong>设置中的<strong>_config.yml</strong>，<br>冒号后面的空格号都不能忽略。</li>
-<li>尽管你已经配置了根目录下的<strong>_config.yml</strong>中的<strong>language</strong>的设置为中文。例如：<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">subtitle:</span> <span class="string">因为悲观</span> <span class="string">所以长乐</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -s</span><br></pre></td></tr></table></figure>
-<p>之后，subtitle仍然<strong>乱码</strong>。</p>
-<h4 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h4><p>只需要将文本保存的编码改为<strong>utf-8</strong>，包括.yml(配置文件),md（博客文件）<br><img src="/2017/12/27/yaliy-trouble/utf8.png" alt="utf8"></p>
-<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><p> 头像、打赏、md中所提添加的图片<a href="https://www.jianshu.com/p/c2ba9533088a" target="_blank" rel="noopener">需要特别注意</a>。凡是采用主题之后的，须一致的放入<strong>/img/xxx.png</strong>(jpg等)。</p>
-<h1 id="markdown编辑"><a href="#markdown编辑" class="headerlink" title="markdown编辑"></a>markdown编辑</h1><h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><p>markdownd<a href="http://www.cnblogs.com/liugang-vip/p/6337580.html" target="_blank" rel="noopener">语法</a></p>
-<h3 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h3><p>我用的是<strong>Atom</strong>，因为它有丰富的<a href="http://www.cnblogs.com/fanzhidongyzby/p/6637084.html" target="_blank" rel="noopener">插件</a>。当然，多数量的插件会导致软件本身冗余；本末倒置。</p>
-<h3 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h3><p><img src="/2017/12/27/yaliy-trouble/extension.png" alt="ex"></p>
-<h4 id="简要介绍"><a href="#简要介绍" class="headerlink" title="简要介绍"></a>简要介绍</h4><table>
-<thead>
-<tr>
-<th>拓展</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>markdown-preview-plus</td>
-<td>增强预览</td>
-</tr>
-<tr>
-<td>markdown-image-paste</td>
-<td>图片粘贴</td>
-</tr>
-<tr>
-<td>markdown-table-editor</td>
-<td>表格编辑</td>
-</tr>
-<tr>
-<td>markdown-scroll-sync</td>
-<td>同步滚动</td>
-</tr>
-<tr>
-<td>markdown-writer</td>
-<td>md编辑</td>
-</tr>
-</tbody>
-</table>
+        <p><hr></p>
+<h2 id="装饰器"><a href="#装饰器" class="headerlink" title="装饰器"></a>装饰器</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">嵌套函数():</span><br><span class="line">    装饰器():</span><br><span class="line">        新功能</span><br><span class="line">    <span class="keyword">return</span> 装饰器</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#Author：raydied</span></span><br><span class="line"><span class="comment">#装饰器的本质是函数，（装饰其它函数）</span></span><br><span class="line"><span class="comment">#调用之前，就将函数解释完毕的话，就是正确的</span></span><br><span class="line"><span class="comment">#函数为变量，函数之间可赋值</span></span><br><span class="line"><span class="comment"># def foo():</span></span><br><span class="line"><span class="comment">#     print("in the foo")</span></span><br><span class="line"><span class="comment">#     bar()</span></span><br><span class="line"><span class="comment">#     return 0</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># def bar():</span></span><br><span class="line"><span class="comment">#     print("in the bar")</span></span><br><span class="line"><span class="comment">#     return 0</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># foo()</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#高阶函数，将函数当做实参的函数</span></span><br><span class="line"><span class="comment">#1在不修改被修饰函数的源代码的情况下，为被修饰函数添加功能</span></span><br><span class="line"><span class="comment">#高阶函数--调用中</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># def add_f(x,y,f):</span></span><br><span class="line"><span class="comment">#     print("和为",f(x,y))#注意函数调用的时候只有函数的名字，没有小括号</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># def add(a,b):</span></span><br><span class="line"><span class="comment">#     return (a+b)</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># add_f(1,-4,add)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 高阶函数--返回值中调用函数，不改变原函数的调用</span></span><br><span class="line"><span class="comment"># import time</span></span><br><span class="line"><span class="comment"># def foo():</span></span><br><span class="line"><span class="comment">#     time.sleep(1)</span></span><br><span class="line"><span class="comment">#     print("in the foo")</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># def test(func):</span></span><br><span class="line"><span class="comment">#     start_time = time.time()</span></span><br><span class="line"><span class="comment">#     func()</span></span><br><span class="line"><span class="comment">#     stop_time = time.time()</span></span><br><span class="line"><span class="comment">#     print("the function runs %ds"%(stop_time-start_time))</span></span><br><span class="line"><span class="comment">#     return test(func)#这里应该返回装饰器函数，但是这样写的话，会成为递归下去，死循环</span></span><br><span class="line"><span class="comment"># #---》解决的办法就是加一层函数（嵌套），然后再返回装饰器函数</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># foo = test(foo)</span></span><br><span class="line"><span class="comment"># foo()</span></span><br><span class="line"><span class="comment">#但是会出现foo函数两次调用，怎么避免呢！？</span></span><br><span class="line"><span class="comment">#嵌套函数，在一个函数体内定义一个新的函数def/区别函数的调用</span></span><br><span class="line"><span class="comment"># def decorator():</span></span><br><span class="line"><span class="comment">#     print("in the decorator")</span></span><br><span class="line"><span class="comment">#     def foo():</span></span><br><span class="line"><span class="comment">#         print("in the foo")</span></span><br><span class="line"><span class="comment">#     foo()</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># decorator()</span></span><br><span class="line"><span class="comment">##解决上面的问题：装饰器=高阶函数+函数嵌套</span></span><br><span class="line"><span class="comment"># --》解决了不改变原函数的代码及其调用方式，仍增加函数的功能</span></span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">timer</span><span class="params">(func)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">decorator</span><span class="params">()</span>:</span></span><br><span class="line">        start_time = time.time()</span><br><span class="line">        func()</span><br><span class="line">        stop_time = time.time()</span><br><span class="line">        print(<span class="string">"the function runs %ds"</span>%(stop_time-start_time))</span><br><span class="line">    <span class="comment">#decorator()与下一行的效果等价，本行是函数的正常调用</span></span><br><span class="line">    <span class="keyword">return</span> decorator<span class="comment">#将函数的内存地址（即函数在电脑中的门牌号）获取，</span></span><br><span class="line">    <span class="comment"># 赋值给装饰之前的函数，从而完成原函数的升级</span></span><br><span class="line"><span class="meta">@timer#test = timer(test)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test</span><span class="params">()</span>:</span></span><br><span class="line">    time.sleep(<span class="number">2</span>)</span><br><span class="line">    print(<span class="string">"in the test"</span>)</span><br><span class="line"></span><br><span class="line">test()<span class="comment">#装饰之后，原函数已经变成了装饰后的函数，</span></span><br><span class="line"><span class="comment">#方法是 @timer后test函数已经将函数地址变成装饰后的test函数</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -373,13 +325,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/12/27/yaliy-trouble/">yilia_trouble</a></p>
+        <p><span>本文标题:</span><a href="/2018/01/12/decorator/">decorator</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Ray Died</a></p>
-        <p><span>发布时间:</span>2017-12-27, 11:33:06</p>
-        <p><span>最后更新:</span>2018-01-03, 01:49:52</p>
+        <p><span>发布时间:</span>2018-01-12, 02:35:37</p>
+        <p><span>最后更新:</span>2018-01-12, 02:44:17</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/12/27/yaliy-trouble/" title="yilia_trouble">http://raydied.tk/2017/12/27/yaliy-trouble/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://raydied.tk/2017/12/27/yaliy-trouble/　　作者: Ray Died" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2018/01/12/decorator/" title="decorator">http://raydied.tk/2018/01/12/decorator/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://raydied.tk/2018/01/12/decorator/　　作者: Ray Died" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -391,16 +343,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2017/12/28/github-hexo-独立域名/">
-                    github_hexo_独立域名
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2017/12/26/azure/">
-                    Azure
+                <a href="/2017/12/31/python-shopping-cart/">
+                    python_shopping_cart
                 </a>
             </div>
         
@@ -412,7 +358,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo-yilia配置"><span class="toc-number">1.</span> <span class="toc-text">hexo_yilia配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#等待与clean"><span class="toc-number">1.0.1.</span> <span class="toc-text">等待与clean</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#空格和编码"><span class="toc-number">1.0.2.</span> <span class="toc-text">空格和编码</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#解决办法："><span class="toc-number">1.0.2.1.</span> <span class="toc-text">解决办法：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#图片"><span class="toc-number">1.0.3.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#路径"><span class="toc-number">1.0.4.</span> <span class="toc-text">路径</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#markdown编辑"><span class="toc-number">2.</span> <span class="toc-text">markdown编辑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#语法"><span class="toc-number">2.0.1.</span> <span class="toc-text">语法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#编辑器"><span class="toc-number">2.0.2.</span> <span class="toc-text">编辑器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#拓展"><span class="toc-number">2.0.3.</span> <span class="toc-text">拓展</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#简要介绍"><span class="toc-number">2.0.3.1.</span> <span class="toc-text">简要介绍</span></a></li></ol></li></ol></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#装饰器"><span class="toc-number">1.</span> <span class="toc-text">装饰器</span></a></li></ol>
         
     </div>
     <style>
@@ -455,8 +401,8 @@
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function(){
-            this.page.url = 'http://raydied.tk/2017/12/27/yaliy-trouble/';
-            this.page.identifier = '2017/12/27/yaliy-trouble/';
+            this.page.url = 'http://raydied.tk/2018/01/12/decorator/';
+            this.page.identifier = '2018/01/12/decorator/';
         };
         var loadComment = function(){
             var d = document, s = d.createElement('script');
@@ -496,8 +442,8 @@
 
     <!--// Add comment count-->
     <script id="dsq-count-scr" src="//raydied-bu-keng-lu.disqus.com/count.js" async></script>
-    <span class="disqus-comment-count" data-disqus-identifier="2017/12/27/yaliy-trouble/"></span>
-    <span class="disqus-comment-count" data-disqus-url="http://raydied.tk/2017/12/27/yaliy-trouble/"></span>
+    <span class="disqus-comment-count" data-disqus-identifier="2018/01/12/decorator/"></span>
+    <span class="disqus-comment-count" data-disqus-url="http://raydied.tk/2018/01/12/decorator/"></span>
     <script>
         $(".disqus-comment-count").hide();
         var $disqusCount = $(".disqus-comment-count");
@@ -517,15 +463,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/12/28/github-hexo-独立域名/" title="上一篇: github_hexo_独立域名">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2017/12/26/azure/" title="下一篇: Azure">
+            <a href="/2017/12/31/python-shopping-cart/" title="下一篇: python_shopping_cart">
                 <i class="fa fa-angle-right"></i>
             </a>
         
