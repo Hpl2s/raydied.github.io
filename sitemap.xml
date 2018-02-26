@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://raydied.tk//404.html</loc>
+    
+    <lastmod>2018-02-26T10:21:09.098Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://raydied.tk/2018/02/26/404/</loc>
+    
+    <lastmod>2018-02-26T10:21:09.098Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://raydied.tk/home-page/index.html</loc>
+    
+    <lastmod>2018-02-26T10:19:53.064Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://raydied.tk/album/index.html</loc>
+    
+    <lastmod>2018-02-26T10:19:16.239Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://raydied.tk/about/index.html</loc>
+    
+    <lastmod>2018-01-18T08:49:36.022Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://raydied.tk/2018/01/13/list-generator/</loc>
     
     <lastmod>2018-01-12T21:11:45.090Z</lastmod>
@@ -16,13 +51,6 @@
   </url>
   
   <url>
-    <loc>http://raydied.tk/about/index.html</loc>
-    
-    <lastmod>2018-01-03T10:27:14.065Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://raydied.tk/photo/output.json</loc>
     
     <lastmod>2018-01-03T08:56:27.553Z</lastmod>
@@ -33,13 +61,6 @@
     <loc>http://raydied.tk/photo/index.html</loc>
     
     <lastmod>2018-01-03T08:39:27.772Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://raydied.tk//404.html</loc>
-    
-    <lastmod>2018-01-03T07:35:25.710Z</lastmod>
     
   </url>
   
