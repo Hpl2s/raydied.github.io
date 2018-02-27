@@ -1,0 +1,16 @@
+html,body{
+  height: 100%;
+  background-color: rgba(0,0,0,1);
+}
+img{
+  padding: 10px;
+  background-color: white;
+  -webkit-box-reflect: below 5px -webkit-linear-gradient(transparent 60%,rgba(0,0,0,.3));
+  box-reflect: below 5px linear-gradient(transparent 60%,rgba(0,0,0,.3));
+}
+.carousel{
+  height: 900px;
+}
+div.carousel .initialized{
+  padding-top: 10px;
+}
